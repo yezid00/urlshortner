@@ -3,7 +3,8 @@
 use Illuminate\Support\Str;
 
 return [
-    $DATABASE_URL = parse_url('postgres://wxuweyabbrzkkl:34fa7c01cf56c223370817b4889ac81d9d40b9fab7ac3b91490a846319947086@ec2-52-86-116-94.compute-1.amazonaws.com:5432/d6tgvtsb0b26t7');
+
+    $DATABASE_URL = parse_url('postgres://wxuweyabbrzkkl:34fa7c01cf56c223370817b4889ac81d9d40b9fab7ac3b91490a846319947086@ec2-52-86-116-94.compute-1.amazonaws.com:5432/d6tgvtsb0b26t7'),
     /*
     |--------------------------------------------------------------------------
     | Default Database Connection Name
