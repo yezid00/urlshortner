@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Url;
+use DB;
 use Str;
 
 class UrlController extends Controller
 {
 	public function index()
 	{
-		$urls = Url::all();
+		//$urls = Url::all();
+		$urls = DB::table('urls')
+						->orderBy('created_at','desc')
+						->limit(1);
 		return view('urls.index',compact('urls'));
 	}
     public function saveUrl(Request $request){

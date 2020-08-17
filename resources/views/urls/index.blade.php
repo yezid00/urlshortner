@@ -96,7 +96,7 @@
                         </thead>
                         <tbody>
                             @foreach ($urls as $url)
-                                <tr>
+
                                     <td>{{ $url->id }}</td>
                                     <td><a href="{{ $url->url }}" target="_blank">{{ $url->url }}</a></td>
                                     <td><a href="{{ route('short',$url->short_url) }}" target="_blank">{{ route('short', $url->short_url) }}</a></td>
