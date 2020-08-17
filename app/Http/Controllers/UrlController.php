@@ -14,7 +14,8 @@ class UrlController extends Controller
 		//$urls = Url::all();
 		$urls = DB::table('urls')
 						->orderBy('created_at','desc')
-						->limit(1);
+						->limit(1)
+						->get();
 		return view('urls.index',compact('urls'));
 	}
     public function saveUrl(Request $request){
