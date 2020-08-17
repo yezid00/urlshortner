@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','UrlController@index');
 Route::post('url/save','UrlController@saveUrl');
-Route::get('url/{short_url}','UrlController@short')->name('short');
+Route::get('/{short_url}','UrlController@short')->name('short');
