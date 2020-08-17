@@ -27,4 +27,11 @@ class UrlController extends Controller
 
     	return redirect()->back();
     }
+
+    public function short($short_url)
+    {
+    	$link = Url::where('short_url',$short_url)->first();
+
+    	return redirect($link->url);
+    }
 }
